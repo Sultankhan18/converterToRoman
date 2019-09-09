@@ -48,6 +48,11 @@ public class converterToRoman{
         assertEquals("MMCCCXCIV", toRoman(2394));
     }
 
+    @Test
+    void shouldCovert4123toMMMMCXXIII() {
+        assertEquals("MMMMCXXIII", toRoman(4123));
+    }
+
     private String toRoman(int number) {
 
         // Need to find a better way than if sentences to solve this.
